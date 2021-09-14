@@ -1,39 +1,125 @@
+/* open-sans-regular - latin_cyrillic */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/open-sans-v23-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v23-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* open-sans-600 - latin_cyrillic */
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''), url('../fonts/open-sans-v23-latin_cyrillic-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/open-sans-v23-latin_cyrillic-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* raleway-300 - latin_cyrillic */
+
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''), url('../fonts/raleway-v22-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/raleway-v22-latin_cyrillic-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* roboto-regular - latin_cyrillic */
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''), url('../fonts/roboto-v27-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('../fonts/roboto-v27-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+
+/* Common */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
 }
 
-.promo {
-  padding: 50px 0;
-  background-color: lightsteelblue;
+.header {
+    background-color: #152B3C
 }
 
-.promo-inner {
-  margin: 0 auto;
-  width: 1024px;
+.header-inner {
+    max-width: 1440px;
+    padding-left: 81px;
+    padding-right: 81px;
+    margin: 0 auto;
+    border: 1px solid #000;
 }
 
-@media (max-width: 1279px) {
-  .promo-inner {
-    width: auto;
-    max-width: 1024px;
-  }
+.header-wrap {
+    display: flex;
+    align-items: center;
 }
 
-.promo-ttl {
-  font-size: 48px;
-  font-weight: 400;
+.header-nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-@media (max-width: 1279px) {
-  .promo-ttl {
-    font-size: 32px;
-  }
+.header-item {
+    margin-right: 30px;
 }
 
-@media (max-width: 669px) {
-  .promo-ttl {
-    font-size: 20px;
-  }
+.header-item:last-child {
+    margin-right: 0px;
 }
 
-/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGUuY3NzIiwic291cmNlcyI6WyJzdHlsZS5zY3NzIiwiY29tbW9uL192YXJpYWJsZXMuc2NzcyIsImNvbW1vbi9fZm9udHMuc2NzcyIsImNvbW1vbi9fdHlwb2dyYXBoeS5zY3NzIiwiYmxvY2tzL19wcm9tby5zY3NzIl0sInNvdXJjZXNDb250ZW50IjpbIi8vIGNvbW1vbiBmaWxlc1xuQGltcG9ydCBcImNvbW1vbi9fdmFyaWFibGVzXCI7XG5AaW1wb3J0IFwiY29tbW9uL19mb250c1wiO1xuQGltcG9ydCBcImNvbW1vbi9fdHlwb2dyYXBoeVwiO1xuXG4vLyBibG9ja3NcbkBpbXBvcnQgXCJibG9ja3MvX3Byb21vXCI7IiwiJGgxLWZ6LW1vYmlsZTogMjBweDtcbiRoMS1mei10YWJsZXQ6IDMycHg7XG4kaDEtZnotZGVza3RvcDogNDhweDtcbiRoMS1mdzogNDAwOyIsIiRmb250OiBBcmlhbCwgXCJIZWx2ZXRpY2EgTmV1ZVwiLCBIZWx2ZXRpY2EsIHNhbnMtc2VyaWY7IiwiYm9keSB7XG4gIGZvbnQtZmFtaWx5OiAkZm9udDtcbn0iLCIucHJvbW8ge1xuICBwYWRkaW5nOiA1MHB4IDA7XG4gIGJhY2tncm91bmQtY29sb3I6IGxpZ2h0c3RlZWxibHVlO1xufVxuXG4ucHJvbW8taW5uZXIge1xuICBtYXJnaW46IDAgYXV0bztcbiAgd2lkdGg6IDEwMjRweDtcblxuICBAbWVkaWEgKG1heC13aWR0aDogMTI3OXB4KSB7XG4gICAgd2lkdGg6IGF1dG87XG4gICAgbWF4LXdpZHRoOiAxMDI0cHg7XG4gIH1cbn1cblxuLnByb21vLXR0bCB7XG4gIGZvbnQtc2l6ZTogJGgxLWZ6LWRlc2t0b3A7XG4gIGZvbnQtd2VpZ2h0OiAkaDEtZnc7XG5cbiAgQG1lZGlhIChtYXgtd2lkdGg6IDEyNzlweCkge1xuICAgIGZvbnQtc2l6ZTogJGgxLWZ6LXRhYmxldDtcbiAgfVxuXG4gIEBtZWRpYSAobWF4LXdpZHRoOiA2NjlweCkge1xuICAgIGZvbnQtc2l6ZTogJGgxLWZ6LW1vYmlsZTtcbiAgfVxufVxuIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBR0FBLEFBQUEsSUFBSSxDQUFDO0VBQ0gsV0FBVyxFREROLEtBQUssRUFBRSxnQkFBZ0IsRUFBRSxTQUFTLEVBQUUsVUFBVSxHQ0VwRDs7QUNGRCxBQUFBLE1BQU0sQ0FBQztFQUNMLE9BQU8sRUFBRSxNQUFNO0VBQ2YsZ0JBQWdCLEVBQUUsY0FBYyxHQUNqQzs7QUFFRCxBQUFBLFlBQVksQ0FBQztFQUNYLE1BQU0sRUFBRSxNQUFNO0VBQ2QsS0FBSyxFQUFFLE1BQU0sR0FNZDtFQUpDLE1BQU0sRUFBRSxTQUFTLEVBQUUsTUFBTTtJQUozQixBQUFBLFlBQVksQ0FBQztNQUtULEtBQUssRUFBRSxJQUFJO01BQ1gsU0FBUyxFQUFFLE1BQU0sR0FFcEI7O0FBRUQsQUFBQSxVQUFVLENBQUM7RUFDVCxTQUFTLEVIZEssSUFBSTtFR2VsQixXQUFXLEVIZEwsR0FBRyxHR3VCVjtFQVBDLE1BQU0sRUFBRSxTQUFTLEVBQUUsTUFBTTtJQUozQixBQUFBLFVBQVUsQ0FBQztNQUtQLFNBQVMsRUhuQkUsSUFBSSxHR3lCbEI7RUFIQyxNQUFNLEVBQUUsU0FBUyxFQUFFLEtBQUs7SUFSMUIsQUFBQSxVQUFVLENBQUM7TUFTUCxTQUFTLEVIeEJFLElBQUksR0cwQmxCIn0= */
+.header-logo {
+    margin-right: 124px;
+}
+
+.header-phone {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 38px;
+    color: #FBF2DA;
+    margin-left: 124px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+}
+
+.header-link {
+    text-decoration: none;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 33px;
+    color: #FBF2DA;
+}
+
+.header-logo {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 42px;
+    line-height: 49px;
+    text-decoration: none;
+    color: #FBF2DA;
+}
