@@ -56,11 +56,14 @@ body {
     margin: 0;
 }
 
+
+/* header */
+
 .header {
     background-color: #152B3C
 }
 
-.header-inner {
+.container {
     max-width: 1440px;
     padding-left: 81px;
     padding-right: 81px;
@@ -122,4 +125,40 @@ body {
     line-height: 49px;
     text-decoration: none;
     color: #FBF2DA;
+}
+
+
+/* main */
+
+.promo {
+    background-image: url(../images/sand-castle.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-color {
+    background-color: rgba(21, 43, 60, 0.5);
+}
+
+.promo-title {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 116px;
+    line-height: 136px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-top: 191px;
+}
+
+.promo p {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 44px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 235px;
 }
